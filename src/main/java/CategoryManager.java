@@ -19,7 +19,7 @@ public class CategoryManager {
 
     public void addCategory(String category) {
         if (!exist(category)) {
-            throw new OutOfStockException(category);
+            throw new DuplicateCategoryException(category);
         }
         categories.add(category);
     }
