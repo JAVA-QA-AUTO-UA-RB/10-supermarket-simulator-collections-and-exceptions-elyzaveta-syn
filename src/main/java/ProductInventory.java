@@ -21,7 +21,6 @@ public class ProductInventory {
         products.add(product);
     }
 
-    // видаляє товар, кидає OutOfStockException, якщо товару немає.
     private void removeProduct(String product) {
         if (!isHere(product)) {
             throw new OutOfStockException(product);
@@ -29,12 +28,10 @@ public class ProductInventory {
         products.remove(product);
     }
 
-    // сортує товари за алфавітом (Collections.sort())
     public void sortProducts() {
         products.sort((Comparator<? super String>) products);
     }
 
-    // повертає список товарів
     public List<String> getProducts() {
         return new ArrayList<>(products);
     }
