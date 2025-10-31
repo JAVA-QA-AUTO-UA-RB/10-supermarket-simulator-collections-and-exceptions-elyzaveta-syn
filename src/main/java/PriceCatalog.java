@@ -31,7 +31,7 @@ public class PriceCatalog {
         return catalog.get(product);
     }
 
-    public HashMap<Object, Double> getPrices() {
+    public Map<String, Double> getPrices() {
         return new HashMap<>();
     }
 }
