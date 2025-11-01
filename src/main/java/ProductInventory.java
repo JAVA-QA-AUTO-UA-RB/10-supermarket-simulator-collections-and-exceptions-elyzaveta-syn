@@ -29,7 +29,7 @@ public class ProductInventory {
     }
 
     public void sortProducts() {
-        products.sort((Comparator<? super String>) products);
+        products.sort(String::compareTo);
     }
 
     public List<String> getProducts() {
