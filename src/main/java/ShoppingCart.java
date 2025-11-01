@@ -29,7 +29,7 @@ public class ShoppingCart {
         }
 
         double tax = sum * (10 / 100);
-        double sale = (5 / 100) + Math.random() * 10 / 100;
+        double sale = Math.random() * 0.1 + 0.05;
         double finalSum = tax / 100 * sale;
 
         if (payment < finalSum) {
