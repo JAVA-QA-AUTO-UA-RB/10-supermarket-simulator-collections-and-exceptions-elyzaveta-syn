@@ -1,7 +1,6 @@
 package main.java;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 class OutOfStockException extends RuntimeException {
@@ -33,6 +32,6 @@ public class ProductInventory {
     }
 
     public List<String> getProducts() {
-        return new ArrayList<>(products);
+        return products;
     }
 }

@@ -32,6 +32,6 @@ public class PriceCatalog {
     }
 
     public Map<String, Double> getPrices() {
-        return new HashMap<>();
+        return catalog;
     }
 }

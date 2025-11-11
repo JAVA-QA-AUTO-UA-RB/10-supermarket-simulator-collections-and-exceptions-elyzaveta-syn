@@ -38,6 +38,6 @@ public class ShoppingCart {
     }
 
     public List<String> getCart() {
-        return new ArrayList<>();
+        return productCart;
     }
 }

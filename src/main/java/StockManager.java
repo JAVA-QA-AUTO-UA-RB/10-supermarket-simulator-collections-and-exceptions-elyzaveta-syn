@@ -23,6 +23,6 @@ public class StockManager {
     }
 
     public Map<String, Integer> getStock() {
-        return new HashMap<>();
+        return stock;
     }
 }
