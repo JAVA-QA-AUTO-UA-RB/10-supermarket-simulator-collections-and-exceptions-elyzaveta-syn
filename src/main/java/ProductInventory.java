@@ -1,14 +1,9 @@
 package main.java;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
+import main.java.exceptions.OutOfStockException;
 
-class OutOfStockException extends RuntimeException {
-    public OutOfStockException(String product) {
-        super("Товар \"" + product + "\" відсутній на складі.");
-    }
-}
+import java.util.ArrayList;
+import java.util.List;
 
 public class ProductInventory {
     List<String> products = new ArrayList<>();

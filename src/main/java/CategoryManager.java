@@ -1,13 +1,9 @@
 package main.java;
 
+import main.java.exceptions.DuplicateCategoryException;
+
 import java.util.HashSet;
 import java.util.Set;
-
-class DuplicateCategoryException extends RuntimeException {
-    public DuplicateCategoryException(String category) {
-        super("Зазначена категорія вже існує.");
-    }
-}
 
 public class CategoryManager {
 

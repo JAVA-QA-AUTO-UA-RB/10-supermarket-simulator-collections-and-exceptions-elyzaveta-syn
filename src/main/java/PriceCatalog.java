@@ -1,13 +1,9 @@
 package main.java;
 
+import main.java.exceptions.NoSuchProductException;
+
 import java.util.HashMap;
 import java.util.Map;
-
-class NoSuchProductException extends RuntimeException {
-    public NoSuchProductException(String product) {
-        super("Товар \"" + product + "\" не існує.");
-    }
-}
 
 public class PriceCatalog {
 

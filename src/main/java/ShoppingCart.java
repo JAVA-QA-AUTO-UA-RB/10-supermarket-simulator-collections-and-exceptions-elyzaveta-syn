@@ -1,13 +1,10 @@
 package main.java;
 
+import main.java.exceptions.InsufficientFundsException;
+import main.java.exceptions.NoSuchProductException;
+
 import java.util.ArrayList;
 import java.util.List;
-
-class InsufficientFundsException extends RuntimeException {
-    public InsufficientFundsException() {
-        super("Оплати недостатньо!");
-    }
-}
 
 public class ShoppingCart {
 
