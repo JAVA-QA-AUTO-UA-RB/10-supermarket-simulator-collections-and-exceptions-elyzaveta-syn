@@ -1,6 +1,8 @@
 package main.java;
 
 import main.java.exceptions.OutOfStockException;
+import java.util.ArrayList;
+import java.util.List;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +30,6 @@ public class ProductInventory {
     }
 
     public List<String> getProducts() {
-        return new ArrayList<>(products);
+        return products;
     }
 }

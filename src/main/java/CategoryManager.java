@@ -21,6 +21,6 @@ public class CategoryManager {
     }
 
     public Set<String> getCategories() {
-        return new HashSet<>();
+        return categories;
     }
 }
